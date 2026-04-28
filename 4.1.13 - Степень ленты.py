@@ -1,6 +1,15 @@
 from collections import Counter
 
-array = list(map(int, input().split()))
+try:
+    string = input()
+    n = len(string)
+    all_idx = {char: string.rindex(char) for char in string}
+    idx = all_idx[string[0]]
+except (EOFError, IndexError):
+    print()
+    exit()
+
+
 
 D = dict(Counter(array))
 num, degree = max(D.items(), key=lambda x: x[1])
