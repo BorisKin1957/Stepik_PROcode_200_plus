@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 try:
     string = input()
     n = len(string)
