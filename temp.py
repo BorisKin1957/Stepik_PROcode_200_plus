@@ -1,6 +1,1 @@
-
-x = 'login>feed'
-
-a = x[x.index('>') + 1]
-
-print(a)
+print(len({1, 2, 3}))
